@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0dpggaunmko7"]
+
+[sub_resource type="Theme" id="Theme_bubt7"]
+
+[node name="Button" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+theme = SubResource("Theme_bubt7")
+button_mask = 0
+text = "Press ⎵ to Slash"
