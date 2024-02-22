@@ -1,11 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://ck8cjuesvk8vw"]
+[gd_scene load_steps=3 format=3 uid="uid://ck8cjuesvk8vw"]
 
+[ext_resource type="PackedScene" uid="uid://1xaobn327has" path="res://background.tscn" id="1_5yfel"]
 [ext_resource type="PackedScene" uid="uid://b0dpggaunmko7" path="res://button.tscn" id="1_h2nm5"]
 
 [node name="Title Screen" type="Node2D"]
 
+[node name="Background" parent="." instance=ExtResource("1_5yfel")]
+
 [node name="Button" parent="." instance=ExtResource("1_h2nm5")]
-offset_left = 471.0
-offset_top = 414.0
-offset_right = 669.0
-offset_bottom = 463.0
+offset_left = 433.0
+offset_top = 415.0
+offset_right = 771.0
+offset_bottom = 563.0
