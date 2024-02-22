@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cp4drj0di5d00"
-path="res://.godot/imported/SynthSlashLogo.png-ab1084a083d4c7fe45a3f759cf011e76.ctex"
+uid="uid://dlegou0sieg54"
+path="res://.godot/imported/IMG_0177.png-35aaa2a17a5c7ba565c048e87cbcb874.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SynthSlashLogo.png"
-dest_files=["res://.godot/imported/SynthSlashLogo.png-ab1084a083d4c7fe45a3f759cf011e76.ctex"]
+source_file="res://IMG_0177.png"
+dest_files=["res://.godot/imported/IMG_0177.png-35aaa2a17a5c7ba565c048e87cbcb874.ctex"]
 
 [params]
 
