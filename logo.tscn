@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bl58cectf3705"]
+
+[ext_resource type="Texture2D" uid="uid://cp4drj0di5d00" path="res://SynthSlashLogo.png" id="1_33sfs"]
+
+[node name="Logo" type="Polygon2D"]
+texture = ExtResource("1_33sfs")
+texture_scale = Vector2(4, 4)
+polygon = PackedVector2Array(0, 0, 280, 0, 280, 232, 0, 232)
