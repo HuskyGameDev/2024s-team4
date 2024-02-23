@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bl58cectf3705"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q3xxl"]
+load_path = "res://.godot/imported/IMG_0177.png-35aaa2a17a5c7ba565c048e87cbcb874.ctex"
+
+[node name="Logo" type="Polygon2D"]
+texture = SubResource("CompressedTexture2D_q3xxl")
+texture_scale = Vector2(4.7, 4.7)
+polygon = PackedVector2Array(0, 0, 280, 0, 280, 232, 0, 232)

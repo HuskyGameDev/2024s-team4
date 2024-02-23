@@ -1,10 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://b0dpggaunmko7"]
+[gd_scene load_steps=3 format=3 uid="uid://b0dpggaunmko7"]
+
+[ext_resource type="Texture2D" uid="uid://bnf7ysej38k23" path="res://Screenshot_2023-03-20_204301-removebg-preview.png" id="1_yavsl"]
 
 [sub_resource type="Theme" id="Theme_bubt7"]
 
 [node name="Button" type="Button"]
-offset_right = 8.0
-offset_bottom = 8.0
+offset_right = 338.0
+offset_bottom = 148.0
 theme = SubResource("Theme_bubt7")
 button_mask = 0
-text = "Press ⎵ to Slash"
+icon = ExtResource("1_yavsl")
+flat = true
