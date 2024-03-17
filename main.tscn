@@ -20,19 +20,19 @@ point_count = 2
 
 [sub_resource type="Curve2D" id="Curve2D_n1tvu"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 1304, 192, 0, 0, 0, 0, -192, 192)
+"points": PackedVector2Array(0, 0, 0, 0, 1184, 192, 0, 0, 0, 0, -192, 192)
 }
 point_count = 2
 
 [sub_resource type="Curve2D" id="Curve2D_5o14v"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 1440, 344, 0, 0, 0, 0, -192, 344)
+"points": PackedVector2Array(0, 0, 0, 0, 1168, 344, 0, 0, 0, 0, -192, 344)
 }
 point_count = 2
 
 [sub_resource type="Curve2D" id="Curve2D_daf50"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 1640, 472, 0, 0, 0, 0, -192, 472)
+"points": PackedVector2Array(0, 0, 0, 0, 1176, 472, 0, 0, 0, 0, -192, 472)
 }
 point_count = 2
 
@@ -58,7 +58,7 @@ position = Vector2(64, 144)
 curve = SubResource("Curve2D_n1tvu")
 
 [node name="blueDown" type="PathFollow2D" parent="Arrows/Paths/aPath2"]
-position = Vector2(1304, 192)
+position = Vector2(1184, 192)
 rotation = 3.14159
 
 [node name="BlueArrowDown" parent="Arrows/Paths/aPath2/blueDown" instance=ExtResource("2_xnl41")]
@@ -69,7 +69,7 @@ position = Vector2(72, -136)
 curve = SubResource("Curve2D_5o14v")
 
 [node name="pinkRight" type="PathFollow2D" parent="Arrows/Paths/aPath3"]
-position = Vector2(1440, 344)
+position = Vector2(1168, 344)
 rotation = 3.14159
 
 [node name="PinkArrowRight" parent="Arrows/Paths/aPath3/pinkRight" instance=ExtResource("4_1nsyd")]
@@ -80,7 +80,7 @@ position = Vector2(72, 32)
 curve = SubResource("Curve2D_daf50")
 
 [node name="pinkLeft" type="PathFollow2D" parent="Arrows/Paths/aPath4"]
-position = Vector2(1640, 472)
+position = Vector2(1176, 472)
 rotation = 3.14159
 
 [node name="PinkArrowLeft" parent="Arrows/Paths/aPath4/pinkLeft" instance=ExtResource("3_ushbm")]
@@ -103,6 +103,7 @@ script = ExtResource("9_8be8c")
 position = Vector2(72, 208)
 script = ExtResource("11_sj7nx")
 
+[connection signal="ready" from="Arrows" to="Arrows/Paths/aPath/blueUp/BlueArrowUp" method="_on_arrows_ready"]
 [connection signal="area_entered" from="Arrows/Paths/aPath/blueUp/BlueArrowUp" to="TransparentArrows/TransparentBlueArrowUP" method="_on_blue_arrow_up_area_entered"]
 [connection signal="area_entered" from="TransparentArrows/TransparentBlueArrowUP" to="Arrows/Paths/aPath/blueUp/BlueArrowUp" method="_on_transparent_blue_arrow_up_area_entered"]
 [connection signal="area_entered" from="TransparentArrows/TransparentBlueArrowDown" to="Arrows/Paths/aPath2/blueDown/BlueArrowDown" method="_on_transparent_blue_arrow_down_area_entered"]
