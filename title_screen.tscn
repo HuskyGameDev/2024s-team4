@@ -1,17 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://ck8cjuesvk8vw"]
+[gd_scene load_steps=3 format=3 uid="uid://dii2jpocikb5p"]
 
-[ext_resource type="PackedScene" uid="uid://1xaobn327has" path="res://background.tscn" id="1_5yfel"]
-[ext_resource type="PackedScene" uid="uid://b0dpggaunmko7" path="res://button.tscn" id="1_h2nm5"]
-[ext_resource type="PackedScene" uid="uid://bl58cectf3705" path="res://logo.tscn" id="3_h38ob"]
+[ext_resource type="PackedScene" uid="uid://px6oyaedgasw" path="res://button.tscn" id="1_h2nm5"]
+[ext_resource type="PackedScene" uid="uid://c62esqn30lcr1" path="res://black_background.tscn" id="1_vq32k"]
 
 [node name="Title Screen" type="Node2D"]
 
-[node name="title_background" parent="." instance=ExtResource("1_5yfel")]
-scale = Vector2(1.00982, 1)
-
-[node name="Logo" parent="." instance=ExtResource("3_h38ob")]
-position = Vector2(426, 62)
-scale = Vector2(1.28407, 1.23962)
+[node name="black_background" parent="." instance=ExtResource("1_vq32k")]
 
 [node name="Button" parent="." instance=ExtResource("1_h2nm5")]
 offset_left = 277.0

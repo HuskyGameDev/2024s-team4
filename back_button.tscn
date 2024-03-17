@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccdlj6d32cra1"]
+
+[ext_resource type="FontFile" uid="uid://dixw2j5ugkuvm" path="res://PressStart2P-Regular.ttf" id="1_lh3cm"]
+[ext_resource type="Script" path="res://back_button.gd" id="2_4w7pe"]
+
+[node name="back_button" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+scale = Vector2(0.997279, 1)
+theme_override_fonts/font = ExtResource("1_lh3cm")
+theme_override_font_sizes/font_size = 30
+text = "<-- Back"
+icon_alignment = 1
+script = ExtResource("2_4w7pe")

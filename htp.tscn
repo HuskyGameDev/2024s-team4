@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwr3c652y801u"]
+
+[ext_resource type="PackedScene" uid="uid://bpjcdus3b32cw" path="res://background.tscn" id="1_pfbv2"]
+[ext_resource type="PackedScene" uid="uid://ccdlj6d32cra1" path="res://back_button.tscn" id="2_hyttq"]
+
+[node name="htp" type="Node2D"]
+
+[node name="title_background" parent="." instance=ExtResource("1_pfbv2")]
+
+[node name="back_button" parent="." instance=ExtResource("2_hyttq")]
+offset_left = 3.0
+offset_top = 15.0
+offset_right = 251.0
+offset_bottom = 53.0
