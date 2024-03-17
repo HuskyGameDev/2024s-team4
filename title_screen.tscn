@@ -6,14 +6,17 @@
 
 [node name="Title Screen" type="Node2D"]
 
-[node name="Background" parent="." instance=ExtResource("1_5yfel")]
-
-[node name="Button" parent="." instance=ExtResource("1_h2nm5")]
-offset_left = 433.0
-offset_top = 415.0
-offset_right = 771.0
-offset_bottom = 563.0
+[node name="title_background" parent="." instance=ExtResource("1_5yfel")]
+scale = Vector2(1.00982, 1)
 
 [node name="Logo" parent="." instance=ExtResource("3_h38ob")]
 position = Vector2(426, 62)
 scale = Vector2(1.28407, 1.23962)
+
+[node name="Button" parent="." instance=ExtResource("1_h2nm5")]
+offset_left = 277.0
+offset_top = 472.0
+offset_right = 1429.0
+offset_bottom = 620.0
+action_mode = 0
+icon_alignment = 1
