@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8r5o2g6stkir"]
+
+[ext_resource type="Script" path="res://blue_arrow_down.gd" id="1_0qlqi"]
+[ext_resource type="Texture2D" uid="uid://dta5yy1uohe2n" path="res://BlueArrowUP.png" id="1_ufcdl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k534l"]
+size = Vector2(80, 128)
+
+[node name="BlueArrowDown" type="Area2D"]
+script = ExtResource("1_0qlqi")
+
+[node name="CollisionArea" type="CollisionShape2D" parent="."]
+position = Vector2(40, 64)
+shape = SubResource("RectangleShape2D_k534l")
+
+[node name="bluearrowDOWN" type="Sprite2D" parent="CollisionArea"]
+rotation = 3.14159
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("1_ufcdl")
