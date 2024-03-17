@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://fph3eole1cxk"]
+
+[ext_resource type="PackedScene" uid="uid://djp342dqv0e6i" path="res://player.tscn" id="1_lbs0r"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(212, -88)
+
+[node name="Player" parent="." instance=ExtResource("1_lbs0r")]
+position = Vector2(2, 405)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(364, 412)
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]

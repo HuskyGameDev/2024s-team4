@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://taja81vlwhno"]
+
+[node name="level_select_background" type="Polygon2D"]

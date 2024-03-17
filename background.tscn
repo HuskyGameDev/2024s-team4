@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://1xaobn327has"]
+
+[ext_resource type="Texture2D" uid="uid://c8i2sbu2soqc5" path="res://background_most.png" id="1_rl0gu"]
+
+[node name="title_background" type="Polygon2D"]
+texture = ExtResource("1_rl0gu")
+texture_scale = Vector2(1.3, 1.3)
+polygon = PackedVector2Array(0, 0, 1152, 0, 1152, 648, 0, 648)

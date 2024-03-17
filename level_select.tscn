@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyydcwqrosl2u"]
+
+[ext_resource type="PackedScene" uid="uid://taja81vlwhno" path="res://level_select_background.tscn" id="1_qn7k5"]
+
+[node name="Level Select" type="Node2D"]
+
+[node name="level_select_background" parent="." instance=ExtResource("1_qn7k5")]
+position = Vector2(1124.96, 530.657)
