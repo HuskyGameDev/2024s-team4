@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b8r5o2g6stkir"]
 
 [ext_resource type="Script" path="res://blue_arrow_down.gd" id="1_0qlqi"]
-[ext_resource type="Texture2D" uid="uid://dta5yy1uohe2n" path="res://BlueArrowUP.png" id="1_ufcdl"]
+[ext_resource type="Texture2D" uid="uid://dta5yy1uohe2n" path="res://assets/textures/misc/BlueArrowUP.png" id="1_ufcdl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k534l"]
 size = Vector2(80, 128)

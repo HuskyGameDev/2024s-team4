@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://hmdjiha6hnu5"]
 
 [ext_resource type="Script" path="res://pink_arrow_left.gd" id="1_0wnjr"]
-[ext_resource type="Texture2D" uid="uid://cmbj88q5u0a7" path="res://PinkArrowRight.png" id="1_gvlgj"]
+[ext_resource type="Texture2D" uid="uid://cmbj88q5u0a7" path="res://assets/textures/misc/PinkArrowRight.png" id="1_gvlgj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wml2g"]
 size = Vector2(128, 80)

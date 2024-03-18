@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ujkhvgxvngfr"]
 
-[ext_resource type="Texture2D" uid="uid://cmbj88q5u0a7" path="res://PinkArrowRight.png" id="1_farn3"]
+[ext_resource type="Texture2D" uid="uid://cmbj88q5u0a7" path="res://assets/textures/misc/PinkArrowRight.png" id="1_farn3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qu0f2"]
 size = Vector2(81, 128)

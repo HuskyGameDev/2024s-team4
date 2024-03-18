@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b4a3ygxmun83e"]
 
-[ext_resource type="FontFile" uid="uid://dixw2j5ugkuvm" path="res://PressStart2P-Regular.ttf" id="1_40wdt"]
+[ext_resource type="FontFile" uid="uid://dixw2j5ugkuvm" path="res://assets/fonts/PressStart2P-Regular.ttf" id="1_40wdt"]
 
 [node name="other_button" type="Button"]
 offset_right = 8.0

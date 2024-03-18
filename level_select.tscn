@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bl58cectf3705" path="res://logo.tscn" id="2_ltxd5"]
 [ext_resource type="PackedScene" uid="uid://b4a3ygxmun83e" path="res://button_template.tscn" id="3_uxhwm"]
 [ext_resource type="Script" path="res://button_template.gd" id="4_ge2sm"]
-[ext_resource type="FontFile" uid="uid://dixw2j5ugkuvm" path="res://PressStart2P-Regular.ttf" id="5_2bjmi"]
+[ext_resource type="FontFile" uid="uid://dixw2j5ugkuvm" path="res://assets/fonts/PressStart2P-Regular.ttf" id="5_2bjmi"]
 [ext_resource type="Script" path="res://levels.gd" id="6_g60ub"]
 [ext_resource type="Script" path="res://options.gd" id="6_plroq"]
 [ext_resource type="Script" path="res://credits.gd" id="7_f60wb"]

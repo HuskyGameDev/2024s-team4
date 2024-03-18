@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bpjcdus3b32cw"]
 
-[ext_resource type="Texture2D" path="res://background_most.png" id="1_rl0gu"]
+[ext_resource type="Texture2D" uid="uid://c8i2sbu2soqc5" path="res://assets/textures/backround/background_most.png" id="1_rl0gu"]
 
 [node name="title_background" type="Polygon2D"]
 texture = ExtResource("1_rl0gu")

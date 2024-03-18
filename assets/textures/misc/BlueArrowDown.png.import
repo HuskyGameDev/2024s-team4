@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dta5yy1uohe2n"
-path="res://.godot/imported/BlueArrowUP.png-c72fe9f7d8c7923942ea08316e5372d7.ctex"
+uid="uid://c46qcl2dja4h1"
+path="res://.godot/imported/BlueArrowDown.png-0cbff3f53acab1548d5aa0f35aec70c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BlueArrowUP.png"
-dest_files=["res://.godot/imported/BlueArrowUP.png-c72fe9f7d8c7923942ea08316e5372d7.ctex"]
+source_file="res://assets/textures/misc/BlueArrowDown.png"
+dest_files=["res://.godot/imported/BlueArrowDown.png-0cbff3f53acab1548d5aa0f35aec70c8.ctex"]
 
 [params]
 

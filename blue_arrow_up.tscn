@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://2kgsypc23uys"]
 
-[ext_resource type="Texture2D" uid="uid://dta5yy1uohe2n" path="res://BlueArrowUP.png" id="1_6w2g2"]
+[ext_resource type="Texture2D" uid="uid://dta5yy1uohe2n" path="res://assets/textures/misc/BlueArrowUP.png" id="1_6w2g2"]
 [ext_resource type="Script" path="res://blue_arrow_up.gd" id="1_h5rvf"]
 [ext_resource type="Script" path="res://bluearrowUP.gd" id="2_0ap4t"]
 
