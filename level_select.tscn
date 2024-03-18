@@ -1,6 +1,5 @@
-[gd_scene load_steps=10 format=3 uid="uid://b1burtry5t1sh"]
+[gd_scene load_steps=14 format=3 uid="uid://b1burtry5t1sh"]
 
-[ext_resource type="PackedScene" uid="uid://bpjcdus3b32cw" path="res://background.tscn" id="1_dflbs"]
 [ext_resource type="PackedScene" uid="uid://bl58cectf3705" path="res://logo.tscn" id="2_ltxd5"]
 [ext_resource type="PackedScene" uid="uid://b4a3ygxmun83e" path="res://button_template.tscn" id="3_uxhwm"]
 [ext_resource type="Script" path="res://button_template.gd" id="4_ge2sm"]
@@ -9,10 +8,13 @@
 [ext_resource type="Script" path="res://options.gd" id="6_plroq"]
 [ext_resource type="Script" path="res://credits.gd" id="7_f60wb"]
 [ext_resource type="Script" path="res://quit.gd" id="8_j1dt5"]
+[ext_resource type="Texture2D" uid="uid://7w8ppw07bpku" path="res://assets/textures/backround/city_menu_parallax_1.png" id="9_l8nju"]
+[ext_resource type="Texture2D" uid="uid://b35xyqc7gq83i" path="res://assets/textures/backround/city_menu_parallax_2.png" id="10_6dtr8"]
+[ext_resource type="Texture2D" uid="uid://bk346o5x6e5qq" path="res://assets/textures/backround/city_menu_parallax_3.png" id="11_jfsyx"]
+[ext_resource type="Texture2D" uid="uid://bij1xklyijvoy" path="res://assets/textures/backround/city_menu_parallax_4.png" id="12_yd4cq"]
+[ext_resource type="Texture2D" uid="uid://4dcsd8dm3prs" path="res://assets/textures/backround/city_menu_parallax_5.png" id="13_r5mtf"]
 
 [node name="Level Select" type="Node2D"]
-
-[node name="title_background" parent="." instance=ExtResource("1_dflbs")]
 
 [node name="Logo" parent="." instance=ExtResource("2_ltxd5")]
 position = Vector2(423, 43)
@@ -61,3 +63,35 @@ script = ExtResource("7_f60wb")
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("8_j1dt5")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(576, 324)
+texture = ExtResource("9_l8nju")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(576, 324)
+texture = ExtResource("10_6dtr8")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(576, 324)
+texture = ExtResource("11_jfsyx")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+position = Vector2(576, 324)
+texture = ExtResource("12_yd4cq")
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
+position = Vector2(576, 324)
+texture = ExtResource("13_r5mtf")
