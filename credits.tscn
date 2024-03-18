@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://1s86k27o8qoe"]
+
+[ext_resource type="Script" path="res://back_button.gd" id="1_bnsp6"]
+[ext_resource type="PackedScene" uid="uid://bpjcdus3b32cw" path="res://background.tscn" id="2_rt7lw"]
+[ext_resource type="PackedScene" uid="uid://ccdlj6d32cra1" path="res://back_button.tscn" id="3_cnalf"]
+
+[node name="credits" type="Node2D"]
+script = ExtResource("1_bnsp6")
+
+[node name="title_background" parent="." instance=ExtResource("2_rt7lw")]
+
+[node name="back_button" parent="." instance=ExtResource("3_cnalf")]
+offset_left = 1.0
+offset_top = 29.0
+offset_right = 249.0
+offset_bottom = 67.0

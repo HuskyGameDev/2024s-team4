@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=3 uid="uid://b1burtry5t1sh"]
+
+[ext_resource type="PackedScene" uid="uid://bpjcdus3b32cw" path="res://background.tscn" id="1_dflbs"]
+[ext_resource type="PackedScene" uid="uid://bl58cectf3705" path="res://logo.tscn" id="2_ltxd5"]
+[ext_resource type="PackedScene" uid="uid://b4a3ygxmun83e" path="res://button_template.tscn" id="3_uxhwm"]
+[ext_resource type="Script" path="res://button_template.gd" id="4_ge2sm"]
+[ext_resource type="FontFile" uid="uid://dixw2j5ugkuvm" path="res://PressStart2P-Regular.ttf" id="5_2bjmi"]
+[ext_resource type="Script" path="res://options.gd" id="6_plroq"]
+[ext_resource type="Script" path="res://credits.gd" id="7_f60wb"]
+[ext_resource type="Script" path="res://quit.gd" id="8_j1dt5"]
+
+[node name="Level Select" type="Node2D"]
+
+[node name="title_background" parent="." instance=ExtResource("1_dflbs")]
+
+[node name="Logo" parent="." instance=ExtResource("2_ltxd5")]
+position = Vector2(423, 43)
+
+[node name="htp" parent="." instance=ExtResource("3_uxhwm")]
+offset_left = 391.0
+offset_top = 376.0
+offset_right = 729.0
+offset_bottom = 414.0
+text = "How to Play
+"
+script = ExtResource("4_ge2sm")
+
+[node name="levels" type="Button" parent="."]
+offset_left = 457.0
+offset_top = 322.0
+offset_right = 645.0
+offset_bottom = 360.0
+theme_override_fonts/font = ExtResource("5_2bjmi")
+theme_override_font_sizes/font_size = 30
+text = "Levels"
+
+[node name="options" type="Button" parent="."]
+offset_left = 442.0
+offset_top = 433.0
+offset_right = 660.0
+offset_bottom = 471.0
+theme_override_fonts/font = ExtResource("5_2bjmi")
+theme_override_font_sizes/font_size = 30
+text = "Options"
+script = ExtResource("6_plroq")
+
+[node name="credits" type="Button" parent="."]
+offset_left = 441.0
+offset_top = 485.0
+offset_right = 659.0
+offset_bottom = 523.0
+theme_override_fonts/font = ExtResource("5_2bjmi")
+theme_override_font_sizes/font_size = 30
+text = "Credits"
+script = ExtResource("7_f60wb")
+
+[node name="quit" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("8_j1dt5")

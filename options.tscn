@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://c30c8yyhmofjs"]
+
+[ext_resource type="Script" path="res://back_button.gd" id="1_hax46"]
+[ext_resource type="PackedScene" uid="uid://bpjcdus3b32cw" path="res://background.tscn" id="2_bo48v"]
+[ext_resource type="PackedScene" uid="uid://ccdlj6d32cra1" path="res://back_button.tscn" id="3_ec7wc"]
+
+[node name="options" type="Node2D"]
+script = ExtResource("1_hax46")
+
+[node name="title_background" parent="." instance=ExtResource("2_bo48v")]
+
+[node name="back_button" parent="." instance=ExtResource("3_ec7wc")]
+offset_top = 29.0
+offset_right = 248.0
+offset_bottom = 67.0

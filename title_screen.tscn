@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dii2jpocikb5p"]
+
+[ext_resource type="PackedScene" uid="uid://px6oyaedgasw" path="res://button.tscn" id="1_h2nm5"]
+[ext_resource type="PackedScene" uid="uid://c62esqn30lcr1" path="res://black_background.tscn" id="1_vq32k"]
+
+[node name="Title Screen" type="Node2D"]
+
+[node name="black_background" parent="." instance=ExtResource("1_vq32k")]
+
+[node name="Button" parent="." instance=ExtResource("1_h2nm5")]
+offset_left = 277.0
+offset_top = 472.0
+offset_right = 1429.0
+offset_bottom = 620.0
+action_mode = 0
+icon_alignment = 1
