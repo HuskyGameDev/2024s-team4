@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b1burtry5t1sh"]
+[gd_scene load_steps=15 format=3 uid="uid://b1burtry5t1sh"]
 
 [ext_resource type="PackedScene" uid="uid://bl58cectf3705" path="res://logo.tscn" id="2_ltxd5"]
 [ext_resource type="PackedScene" uid="uid://b4a3ygxmun83e" path="res://button_template.tscn" id="3_uxhwm"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://options.gd" id="6_plroq"]
 [ext_resource type="Script" path="res://credits.gd" id="7_f60wb"]
 [ext_resource type="Script" path="res://quit.gd" id="8_j1dt5"]
+[ext_resource type="Script" path="res://ParallaxBackground.gd" id="9_1d02j"]
 [ext_resource type="Texture2D" uid="uid://7w8ppw07bpku" path="res://assets/textures/backround/city_menu_parallax_1.png" id="9_l8nju"]
 [ext_resource type="Texture2D" uid="uid://b35xyqc7gq83i" path="res://assets/textures/backround/city_menu_parallax_2.png" id="10_6dtr8"]
 [ext_resource type="Texture2D" uid="uid://bk346o5x6e5qq" path="res://assets/textures/backround/city_menu_parallax_3.png" id="11_jfsyx"]
@@ -66,6 +67,7 @@ script = ExtResource("8_j1dt5")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scroll_ignore_camera_zoom = true
+script = ExtResource("9_1d02j")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2(0, 0)
