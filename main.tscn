@@ -1,111 +1,26 @@
-[gd_scene load_steps=16 format=3 uid="uid://bayexdw7fw8a8"]
+[gd_scene load_steps=7 format=3 uid="uid://bayexdw7fw8a8"]
 
-[ext_resource type="PackedScene" uid="uid://2kgsypc23uys" path="res://blue_arrow_up.tscn" id="1_0i7ga"]
-[ext_resource type="PackedScene" uid="uid://b8r5o2g6stkir" path="res://blue_arrow_down.tscn" id="2_xnl41"]
-[ext_resource type="PackedScene" uid="uid://hmdjiha6hnu5" path="res://pink_arrow_left.tscn" id="3_ushbm"]
-[ext_resource type="PackedScene" uid="uid://5shdat2ganpc" path="res://pink_arrow_right.tscn" id="4_1nsyd"]
-[ext_resource type="PackedScene" uid="uid://tw2vc5wpys0y" path="res://transparent_blue_arrow_down.tscn" id="5_nq3jr"]
-[ext_resource type="PackedScene" uid="uid://c67kfb4gb0clc" path="res://transparent_blue_arrow_up.tscn" id="6_cfvnj"]
-[ext_resource type="PackedScene" uid="uid://ujkhvgxvngfr" path="res://transparent_pink_arrow_left.tscn" id="7_adoq1"]
-[ext_resource type="Script" path="res://transparent_blue_arrow_down.gd" id="7_vou5g"]
-[ext_resource type="PackedScene" uid="uid://b021dvoxcsl1l" path="res://transparent_pink_arrow_right.tscn" id="8_mkyrq"]
-[ext_resource type="Script" path="res://transparent_pink_arrow_left.gd" id="9_8be8c"]
-[ext_resource type="Script" path="res://transparent_pink_arrow_right.gd" id="11_sj7nx"]
-
-[sub_resource type="Curve2D" id="Curve2D_rdobf"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 1176, 64, 0, 0, 0, 0, -192, 64)
-}
-point_count = 2
-
-[sub_resource type="Curve2D" id="Curve2D_n1tvu"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 1184, 192, 0, 0, 0, 0, -192, 192)
-}
-point_count = 2
-
-[sub_resource type="Curve2D" id="Curve2D_5o14v"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 1168, 344, 0, 0, 0, 0, -192, 344)
-}
-point_count = 2
-
-[sub_resource type="Curve2D" id="Curve2D_daf50"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 1176, 472, 0, 0, 0, 0, -192, 472)
-}
-point_count = 2
+[ext_resource type="PackedScene" uid="uid://d2cuky8rra56l" path="res://the_blue_arrow_up_with_path.tscn" id="1_j6bvl"]
+[ext_resource type="Script" path="res://AudioStreamPlayer.gd" id="2_1f6fa"]
+[ext_resource type="AudioStream" uid="uid://dsqbd0qik7wb0" path="res://assets/music/trickstep.mp3" id="2_01xfo"]
+[ext_resource type="PackedScene" uid="uid://d0rauv5n2q067" path="res://the_pink_arrow_right_with_path.tscn" id="2_4se56"]
+[ext_resource type="PackedScene" uid="uid://bqi0y8w2tvm52" path="res://the_blue_arrow_down_with_path.tscn" id="2_60jxo"]
+[ext_resource type="PackedScene" uid="uid://ceq0cnnxsoe1b" path="res://the_pink_arrow_left_with_path.tscn" id="2_lbyvf"]
 
 [node name="PressToMatch" type="Node2D"]
 
-[node name="Arrows" type="Node2D" parent="."]
+[node name="trickstep" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_01xfo")
+autoplay = true
+script = ExtResource("2_1f6fa")
 
-[node name="Paths" type="Node2D" parent="Arrows"]
+[node name="ThePinkArrowLeftWithPath" parent="trickstep" instance=ExtResource("2_lbyvf")]
+position = Vector2(0, 456)
 
-[node name="aPath" type="Path2D" parent="Arrows/Paths"]
-position = Vector2(64, -24)
-curve = SubResource("Curve2D_rdobf")
+[node name="ThePinkArrowRightWithPath" parent="trickstep" instance=ExtResource("2_4se56")]
+position = Vector2(0, 152)
 
-[node name="blueUp" type="PathFollow2D" parent="Arrows/Paths/aPath"]
-position = Vector2(1176, 64)
-rotation = 3.14159
+[node name="TheBlueArrowDownWithPath" parent="trickstep" instance=ExtResource("2_60jxo")]
 
-[node name="BlueArrowUp" parent="Arrows/Paths/aPath/blueUp" instance=ExtResource("1_0i7ga")]
-rotation = 3.14159
-
-[node name="aPath2" type="Path2D" parent="Arrows/Paths"]
-position = Vector2(64, 144)
-curve = SubResource("Curve2D_n1tvu")
-
-[node name="blueDown" type="PathFollow2D" parent="Arrows/Paths/aPath2"]
-position = Vector2(1184, 192)
-rotation = 3.14159
-
-[node name="BlueArrowDown" parent="Arrows/Paths/aPath2/blueDown" instance=ExtResource("2_xnl41")]
-rotation = 3.14159
-
-[node name="aPath3" type="Path2D" parent="Arrows/Paths"]
-position = Vector2(72, -136)
-curve = SubResource("Curve2D_5o14v")
-
-[node name="pinkRight" type="PathFollow2D" parent="Arrows/Paths/aPath3"]
-position = Vector2(1168, 344)
-rotation = 3.14159
-
-[node name="PinkArrowRight" parent="Arrows/Paths/aPath3/pinkRight" instance=ExtResource("4_1nsyd")]
-rotation = 3.14159
-
-[node name="aPath4" type="Path2D" parent="Arrows/Paths"]
-position = Vector2(72, 32)
-curve = SubResource("Curve2D_daf50")
-
-[node name="pinkLeft" type="PathFollow2D" parent="Arrows/Paths/aPath4"]
-position = Vector2(1176, 472)
-rotation = 3.14159
-
-[node name="PinkArrowLeft" parent="Arrows/Paths/aPath4/pinkLeft" instance=ExtResource("3_ushbm")]
-rotation = 3.14159
-
-[node name="TransparentArrows" type="Node2D" parent="."]
-
-[node name="TransparentBlueArrowUP" parent="TransparentArrows" instance=ExtResource("6_cfvnj")]
-position = Vector2(64, 40)
-
-[node name="TransparentBlueArrowDown" parent="TransparentArrows" instance=ExtResource("5_nq3jr")]
-position = Vector2(64, 336)
-script = ExtResource("7_vou5g")
-
-[node name="TransparentPinkArrowLeft" parent="TransparentArrows" instance=ExtResource("7_adoq1")]
-position = Vector2(72, 504)
-script = ExtResource("9_8be8c")
-
-[node name="TransparentPinkArrowRight" parent="TransparentArrows" instance=ExtResource("8_mkyrq")]
-position = Vector2(72, 208)
-script = ExtResource("11_sj7nx")
-
-[connection signal="ready" from="Arrows" to="Arrows/Paths/aPath/blueUp/BlueArrowUp" method="_on_arrows_ready"]
-[connection signal="area_entered" from="Arrows/Paths/aPath/blueUp/BlueArrowUp" to="TransparentArrows/TransparentBlueArrowUP" method="_on_blue_arrow_up_area_entered"]
-[connection signal="area_entered" from="TransparentArrows/TransparentBlueArrowUP" to="Arrows/Paths/aPath/blueUp/BlueArrowUp" method="_on_transparent_blue_arrow_up_area_entered"]
-[connection signal="area_entered" from="TransparentArrows/TransparentBlueArrowDown" to="Arrows/Paths/aPath2/blueDown/BlueArrowDown" method="_on_transparent_blue_arrow_down_area_entered"]
-[connection signal="area_entered" from="TransparentArrows/TransparentPinkArrowLeft" to="Arrows/Paths/aPath4/pinkLeft/PinkArrowLeft" method="_on_transparent_pink_arrow_left_area_entered"]
-[connection signal="area_entered" from="TransparentArrows/TransparentPinkArrowRight" to="Arrows/Paths/aPath3/pinkRight/PinkArrowRight" method="_on_transparent_pink_arrow_right_area_entered"]
+[node name="TheBlueArrowUpWithPath" parent="trickstep" instance=ExtResource("1_j6bvl")]
+position = Vector2(0, 304)

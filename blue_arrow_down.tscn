@@ -4,13 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://dta5yy1uohe2n" path="res://assets/textures/misc/BlueArrowUP.png" id="1_ufcdl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k534l"]
-size = Vector2(80, 128)
+size = Vector2(98, 111)
 
 [node name="BlueArrowDown" type="Area2D"]
 script = ExtResource("1_0qlqi")
 
 [node name="CollisionArea" type="CollisionShape2D" parent="."]
-position = Vector2(40, 64)
+position = Vector2(49, 55.5)
 shape = SubResource("RectangleShape2D_k534l")
 
 [node name="bluearrowDOWN" type="Sprite2D" parent="CollisionArea"]

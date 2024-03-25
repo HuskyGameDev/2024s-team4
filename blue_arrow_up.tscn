@@ -5,13 +5,13 @@
 [ext_resource type="Script" path="res://bluearrowUP.gd" id="2_0ap4t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vsqo0"]
-size = Vector2(80, 128)
+size = Vector2(97, 111)
 
 [node name="BlueArrowUp" type="Area2D"]
 script = ExtResource("1_h5rvf")
 
 [node name="CollisionArea" type="CollisionShape2D" parent="."]
-position = Vector2(40, 64)
+position = Vector2(48.5, 55.5)
 shape = SubResource("RectangleShape2D_vsqo0")
 
 [node name="bluearrowUP" type="Sprite2D" parent="CollisionArea"]

@@ -1,7 +1,7 @@
 extends Area2D
 
 @onready var path_follow: PathFollow2D = get_parent()
-@export var speed = 100
+@export var speed = 300
 var rightscore = 0
 
 func _physics_process(delta):

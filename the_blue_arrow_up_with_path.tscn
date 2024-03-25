@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2cuky8rra56l"]
+
+[ext_resource type="PackedScene" uid="uid://c67kfb4gb0clc" path="res://transparent_blue_arrow_up.tscn" id="2_ee5hu"]
+[ext_resource type="PackedScene" uid="uid://2kgsypc23uys" path="res://blue_arrow_up.tscn" id="3_7iumu"]
+
+[sub_resource type="Curve2D" id="Curve2D_wvn5q"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1232, 40, 0, 0, 0, 0, -152, 40)
+}
+point_count = 2
+
+[node name="TheBlueArrowUpWithPath" type="Node2D"]
+
+[node name="TransparentBlueArrowUP" parent="." instance=ExtResource("2_ee5hu")]
+position = Vector2(80, 39)
+
+[node name="GoodArea" type="Area2D" parent="TransparentBlueArrowUP"]
+
+[node name="GoodCollision" type="CollisionPolygon2D" parent="TransparentBlueArrowUP/GoodArea" groups=["HitArea"]]
+position = Vector2(18, -0.654914)
+scale = Vector2(0.625, 0.979911)
+polygon = PackedVector2Array(0, 1, 96, 1, 96, 113, 0, 113)
+
+[node name="PerfectArea" type="Area2D" parent="TransparentBlueArrowUP/GoodArea" groups=["HitArea"]]
+
+[node name="PerfectCollision" type="CollisionPolygon2D" parent="TransparentBlueArrowUP/GoodArea/PerfectArea"]
+position = Vector2(11.3333, -0.654914)
+scale = Vector2(0.833333, 0.979911)
+polygon = PackedVector2Array(32, 1, 32, 113, 56, 113, 56, 1)
+
+[node name="aPath" type="Path2D" parent="."]
+curve = SubResource("Curve2D_wvn5q")
+
+[node name="blueUp2" type="PathFollow2D" parent="aPath"]
+position = Vector2(1232, 40)
+rotation = 3.14159
+
+[node name="BlueArrowUp" parent="aPath/blueUp2" instance=ExtResource("3_7iumu")]
+rotation = 3.14159
+
+[node name="_Timer_78674" type="Timer" parent="aPath/blueUp2"]
+wait_time = 0.2
+one_shot = true
+
+[connection signal="area_entered" from="TransparentBlueArrowUP" to="aPath/blueUp2/BlueArrowUp" method="_on_transparent_blue_arrow_up_area_entered"]
+[connection signal="area_exited" from="TransparentBlueArrowUP" to="aPath/blueUp2/BlueArrowUp" method="_on_transparent_blue_arrow_up_area_exited"]

@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://ceq0cnnxsoe1b"]
+
+[ext_resource type="PackedScene" uid="uid://ujkhvgxvngfr" path="res://transparent_pink_arrow_left.tscn" id="1_n7enq"]
+[ext_resource type="PackedScene" uid="uid://hmdjiha6hnu5" path="res://pink_arrow_left.tscn" id="2_wichv"]
+
+[sub_resource type="Curve2D" id="Curve2D_ew84h"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1224, 48, 0, 0, 0, 0, -144, 48)
+}
+point_count = 2
+
+[node name="ThePinkArrowLeftWithPath" type="Node2D"]
+
+[node name="TransparentPinkArrowLeft" parent="." instance=ExtResource("1_n7enq")]
+position = Vector2(72, 48)
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_ew84h")
+
+[node name="pinkLeft" type="PathFollow2D" parent="Path2D"]
+position = Vector2(1224, 48)
+rotation = 3.14159
+
+[node name="PinkArrowLeft" parent="Path2D/pinkLeft" instance=ExtResource("2_wichv")]
+position = Vector2(0, -3.05176e-05)
+rotation = 3.14159
+
+[node name="_Timer_78677" type="Timer" parent="Path2D/pinkLeft"]
+wait_time = 0.2
+one_shot = true
+
+[connection signal="area_entered" from="TransparentPinkArrowLeft" to="Path2D/pinkLeft/PinkArrowLeft" method="_on_transparent_pink_arrow_left_area_entered"]

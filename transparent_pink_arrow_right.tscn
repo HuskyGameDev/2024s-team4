@@ -3,12 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://cmbj88q5u0a7" path="res://assets/textures/misc/PinkArrowRight.png" id="1_cpsit"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qu0f2"]
-size = Vector2(81, 128)
+size = Vector2(98.5, 111)
 
 [node name="TransparentPinkArrowRight" type="Area2D"]
 
 [node name="AreaOfContact" type="CollisionShape2D" parent="."]
-position = Vector2(64, 40)
+position = Vector2(55.5, 48.75)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_qu0f2")
 debug_color = Color(0.760784, 0.454902, 0, 0.419608)

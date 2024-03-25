@@ -3,12 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://dta5yy1uohe2n" path="res://assets/textures/misc/BlueArrowUP.png" id="1_18mkr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qu0f2"]
-size = Vector2(81, 128)
+size = Vector2(96, 111)
 
 [node name="TransparentBlueArrowDown" type="Area2D"]
 
 [node name="AreaOfContact" type="CollisionShape2D" parent="."]
-position = Vector2(63.5, 64)
+position = Vector2(48, 56)
 shape = SubResource("RectangleShape2D_qu0f2")
 debug_color = Color(0.760784, 0.454902, 0, 0.419608)
 metadata/_edit_group_ = true
